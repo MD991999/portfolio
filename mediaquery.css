@@ -1,0 +1,1204 @@
+@media(max-width:576px) {
+    /* ==============HOME SESSION BEGINS====== */
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .home-text {
+        flex: 1;
+    }
+
+    .home-img {
+        flex: 1;
+        border: 2px solid rgb(207, 200, 200);
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .home-text h1 {
+        margin: 10px 0px 30px;
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    .home-text h3 {
+        color: var(--main-color);
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .home-text h5 {
+        margin-bottom: 23px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .home-text p {
+        font-size: 20px;
+        color: #000;
+        line-height: 28px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    /* ==============HOME SESSION ENDS====== */
+
+
+    /* =============ABOUT SESSION BEGINS========== */
+
+    .about {
+        min-height: 210vh;
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--blue-dark);
+        line-height: 1.5;
+        -webkit-top-highlight-color: transparent;
+        padding: 60px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .img-box {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        padding: 25px;
+        background-color: var(--white-alpha-25);
+        border: var(--white-alpha-40);
+        margin-left: 10px;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills .skill-item {
+        background-color: var(--white-alpha-25);
+        border: 3px solid var(--white-alpha-40);
+        text-transform: capitalize;
+        padding: 5px 5px;
+        margin: 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .about-tabs .tab-item {
+        background-color: var(--second-main-color);
+        border: none;
+        text-transform: capitalize;
+        display: inline-block;
+        color: var(--blue-dark);
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 2px 2px;
+        margin: 5px 2px;
+        position: relative;
+        border-radius: 20px;
+        width: 45%;
+        text-align: center;
+    }
+
+    .about .heading-about {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    /* ======ABOUT SESSION ENDS====== */
+
+
+    /* =============EDUCATION SESSION START============ */
+
+    .heading-about1 {
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .card-inner1 {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+    }
+
+    #backface {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .empty::before {
+        content: '';
+        width: 2px;
+        height: 658px;
+        position: absolute;
+        top: -24px;
+        left: -5px;
+        background-color: #c0c0c2;
+    }
+
+    .circle-shape {
+        width: 5%;
+        height: 20px;
+        clip-path: circle(20%);
+        background-color: #9a9aaf;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+
+    .sslc p,
+    .highersecondary p,
+    .graduation p,
+    .postgraduation p {
+        margin-left: 20px;
+    }
+
+    .about {
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .button-arrow {
+        font-size: 25px;
+        width: 16%;
+        height: 45px;
+        border-radius: 55%;
+        border: none;
+        background-color: #2b847e;
+        color: #18293c;
+        float: right;
+        margin: 3px;
+        cursor: pointer;
+    }
+
+    /* =============EDUCATION SESSION ENDS============ */
+
+}
+@media(max-width:768px){
+    /* ============HEADER SESSION BEGINS========== */
+
+    .navlist {
+        display: none;
+        background-color: rgb(197, 188, 152);
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        
+    }
+.show{
+    display: block;
+}
+    #checkbox1 {
+        position: fixed;
+    }
+
+   /* .navlist {
+        left: 0;
+
+    } */
+
+    .navlist li {
+        width: 100%;
+        margin: 10px 0px;
+        z-index: 300;
+        text-align: center;
+    }
+
+    .navlist a::after {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .top-btn {
+        padding: 9px 10px;
+
+    }
+
+    header {
+        padding: 20px 5%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    /* ======HEADER SESSION============= */
+
+}
+@media(min-width:576px) {
+
+    /* ============HEADER SESSION BEGINS========== */
+    /* #menu-icon {
+        display: block;
+    }
+    #navlist-display {
+        display: block;
+        background-color: rgb(197, 188, 152);
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        position: absolute;
+        top: 90px;
+left:-100%;    } */
+/* .navlist2{
+    transform: translateX(0px);
+} */
+    /* #checkbox1 {
+        position: fixed;
+    }
+
+    #checkbox1:checked ~ #navlist-display {
+left:-30%;    }
+
+    .navlist li {
+        width: 100%;
+        margin: 10px 0px;
+        z-index: 300;
+        text-align: center;
+    } */
+
+    /* .navlist a::after {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 100%;
+        width: 130px;
+        height: auto;
+    }
+ */
+    .top-btn {
+        padding: 9px 10px;
+    }
+
+    header {
+        padding: 20px 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* ======HEADER SESSION============= */
+
+    /* ==============HOME SESSION BEGINS====== */
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .home-text {
+        flex: 1;
+    }
+
+    .home-img {
+        flex: 1;
+        border: 2px solid rgb(161, 157, 157);
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    /* ==============HOME SESSION ENDS====== */
+
+    /*=============== ABOUT SESSION BEGINS=============== */
+
+    .about {
+        min-height: 210vh;
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--blue-dark);
+        line-height: 1.5;
+        -webkit-top-highlight-color: transparent;
+        padding: 60px;
+    }
+
+    .logo img {
+        width: 20px;
+    }
+
+    .img-box {
+        border: 1px var(--white-alpha-40);
+        border-radius: 5px;
+        margin: 30px;
+        max-width: 500px;
+        height: 300px;
+        width: 70%;
+        display: none;
+    }
+
+
+    .card {
+        width: 100%;
+        padding: 25px;
+        background-color: var(--white-alpha-25);
+        border: var(--white-alpha-40);
+        margin-left: 10px;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills .skill-item {
+        background-color: var(--white-alpha-25);
+        border: 3px solid var(--white-alpha-40);
+        text-transform: capitalize;
+        padding: 5px 5px;
+        margin: 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .about-tabs .tab-item {
+        background-color: var(--second-main-color);
+        border: none;
+        text-transform: capitalize;
+        display: inline-block;
+        color: var(--blue-dark);
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 2px 2px;
+        margin: 5px 2px;
+        position: relative;
+        border-radius: 20px;
+        width: 30%;
+        text-align: center;
+    }
+
+    .about .heading-about {
+        text-align: center;
+        font-size: 40px;
+    }
+
+
+    .about-session-parent-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    /* ======ABOUT SESSION ENDS HERE===== */
+
+
+    /* =======EDUCATION SESSION BEGINS HERE */
+
+
+    .heading-about1 {
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    .logo img {
+        width: 20px;
+    }
+
+    .img-box {
+        display: none;
+    }
+
+    .card-inner1 {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+    }
+
+    #backface {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .empty::before {
+        content: '';
+        width: 2px;
+        height: 658px;
+        position: absolute;
+        top: -24px;
+        left: 0px;
+        background-color: #c0c0c2;
+    }
+
+    .circle-shape {
+        width: 5%;
+        height: 20px;
+        clip-path: circle(20%);
+        background-color: #9a9aaf;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+
+    .sslc p,
+    .highersecondary p,
+    .graduation p,
+    .postgraduation p {
+        margin-left: 30px;
+    }
+    .about {
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .button-arrow {
+        font-size: 25px;
+        width: 10%;
+        height: 45px;
+        border-radius: 55%;
+        border: none;
+        background-color: #2b847e;
+        color: #18293c;
+        float: right;
+        margin: 3px;
+        cursor: pointer;
+    }
+
+    /* ======EDUCATION SESSION ENDS HERE===== */
+
+
+}
+
+@media(min-width:700px) {
+
+
+    /* ==============HOME SESSION BEGINS====== */
+
+    /* .home {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .home-text {
+        flex: 1;
+    }
+
+    .home-img {
+        flex: 1;
+        border: 2px solid rgb(161, 157, 157);
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .home-img img {
+        max-width: 100%;
+        width: 400px;
+        height: auto;
+    }
+
+    section {
+        padding: 10px 5%;
+    } */
+
+    /* ==============HOME SESSION ENDS====== */
+
+   
+}
+
+@media (min-width:768px) {
+
+    /* ============HEADER SESSION BEGINS========== */
+    #menu-icon {
+        display: none;
+    }
+
+    #checkbox {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 100%;
+        width: 130px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .navlist a {
+        font-weight: 600;
+        padding: 5px 5px;
+        /* color: var(--text-color); */
+color: #18293c;
+    }
+
+.navlist li{
+    /* margin: 22px; */
+    flex: 1;
+}
+    .navlist {
+        display: flex;
+        width:100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: absolute;
+        top:90px;
+        left: 0%;
+        height: 50px;
+        background-color: #e6e6ec;
+        padding: 20px;
+/* background-color: burlywood; */
+align-items: center;
+    }
+    .navlist a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: var(--main-color);
+        /* bottom: -3px; */
+        left: 0;
+        top: 60px;
+        /* bottom: 0px; */
+        transition: ease .40s;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        padding: 10px 5%;
+        transition: .3s;
+    }
+
+    .top-btn {
+        padding: 9px 10px;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        border-radius: 30px;
+        color: var(--text-color);
+        letter-spacing: 1px;
+        font-size: var(--p-font);
+        font-weight: 500;
+        transition: ease .50s;
+    }
+
+    /* ============HEADER SESSION ENDS============ */
+    /*=============== ABOUT SESSION BEGINS=============== */
+
+
+    .about {
+        min-height: 210vh;
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--blue-dark);
+        line-height: 1.5;
+        -webkit-top-highlight-color: transparent;
+        padding: 60px;
+    }
+
+    .logo img {
+        width:130px;
+    }
+
+    .img-box {
+        border: 1px var(--white-alpha-40);
+        border-radius: 5px;
+        margin: 30px;
+        max-width: 500px;
+        height: 300px;
+        width: 55%;
+    }
+
+
+    .card {
+        width: 100%;
+        padding: 25px;
+        background-color: var(--white-alpha-25);
+        border: var(--white-alpha-40);
+        margin-left: 10px;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills .skill-item {
+        background-color: var(--white-alpha-25);
+        border: 3px solid var(--white-alpha-40);
+        text-transform: capitalize;
+        padding: 5px 5px;
+        margin: 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .about-tabs .tab-item {
+        background-color: var(--second-main-color);
+        border: none;
+        text-transform: capitalize;
+        display: inline-block;
+        color: var(--blue-dark);
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 2px 2px;
+        margin: 5px 2px;
+        position: relative;
+        border-radius: 20px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .about .heading-about {
+        text-align: center;
+        font-size: 40px;
+    }
+
+
+    .about-session-parent-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    /* ======ABOUT SESSION ENDS====== */
+    /* ==========EDUCATION SESSION STARTS HERE ======== */
+
+
+    .heading-about1 {
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    
+
+    .card-inner1 {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+    }
+
+    #backface {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .empty::before {
+        content: '';
+        width: 2px;
+        height: 658px;
+        position: absolute;
+        top: -24px;
+        left: 0px;
+        background-color: #c0c0c2;
+    }
+
+    .circle-shape {
+        width: 5%;
+        height: 20px;
+        clip-path: circle(20%);
+        background-color: #9a9aaf;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+
+    .sslc p,
+    .highersecondary p,
+    .graduation p,
+    .postgraduation p {
+        margin-left: 30px;
+    }
+
+    
+    .about {
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .button-arrow {
+        font-size: 25px;
+        width: 7%;
+        height: 45px;
+        border-radius: 55%;
+        border: none;
+        background-color: #2b847e;
+        color: #18293c;
+        float: right;
+        margin: 3px;
+        cursor: pointer;
+    }
+
+
+        /* ==========EDUCATION SESSION ENDS HERE ======== */
+
+}
+
+@media(min-width:992px) {
+
+/* =====ABOUT SESSION BEGINS======== */
+
+.about {
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--blue-dark);
+    line-height: 1.5;
+    -webkit-top-highlight-color: transparent;
+    padding: 60px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.img-box {
+    border: 1px var(--white-alpha-40);
+    border-radius: 5px;
+    margin: 30px;
+    max-width: 500px;
+    height: 300px;
+    width: 45%;
+    display: block;
+}
+
+
+.card {
+    width: 55%;
+    padding: 25px;
+    background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    margin-left: 10px;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.about-text h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .skill-item {
+    background-color: var(--white-alpha-25);
+    border: 3px solid var(--white-alpha-40);
+    text-transform: capitalize;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.about-tabs .tab-item {
+    background-color: var(--second-main-color);
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: var(--blue-dark);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 2px 2px;
+    margin: 5px 2px;
+    position: relative;
+    border-radius: 20px;
+    width: 27%;
+    text-align: center;
+}
+
+.about .heading-about {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.about-session-parent-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+
+/* ======ABOUT SESSION ENDS HERE============= */
+
+/* ========EDUCATION SESSION BEGINS HERE========== */
+
+ .heading-about1 {
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    .logo img {
+        width:130px;
+    }
+
+    .img-box {
+        display:block;
+    }
+
+    .card-inner1 {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        
+    }
+
+    #backface {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .empty::before {
+        content: '';
+        width: 2px;
+        height: 658px;
+        position: absolute;
+        top: -24px;
+        left: 0px;
+        background-color: #c0c0c2;
+    }
+
+    .circle-shape {
+        width: 5%;
+        height: 20px;
+        clip-path: circle(20%);
+        background-color: #9a9aaf;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+
+    .sslc p,
+    .highersecondary p,
+    .graduation p,
+    .postgraduation p {
+        margin-left: 30px;
+    }
+
+    
+    .about {
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .button-arrow {
+        font-size: 25px;
+        width: 12%;
+        height: 45px;
+        border-radius: 55%;
+        border: none;
+        background-color: #2b847e;
+        color: #18293c;
+        float: right;
+        margin: 3px;
+        cursor: pointer;
+    }
+
+
+/* ============EDUCATION SESSION ENDS HERE========= */
+
+}
+
+@media (min-width:1200px) {
+
+
+    /* ==============HOME SESSION BEGINS====== */
+
+    section {
+        padding: 100px 18%;
+    }
+
+    .home {
+        min-height: 100vh;
+
+        height: 100%;
+
+        width: 100%;
+        background: url(new-session/background\ \(1\).jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-gap: 4rem;
+    }
+
+    .home-text h1 {
+        margin: 10px 0px 25px;
+        font-size: var(--big-font);
+        line-height: 1;
+        font-weight: 500;
+    }
+
+    .home-text h5 {
+        margin-bottom: 23px;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    span {
+        color: var(--main-color);
+    }
+
+    .home-text h3 {
+        color: var(--main-color);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .home-text p {
+        font-size: var(--p-font);
+        color: #000;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .home-img img {
+        max-width: 100%;
+        width: 540px;
+        height: auto;
+    }
+
+    /* ==============HOME SESSION ENDS====== */
+    /* ==========ABOUT SESSION BEGINS================== */
+    .about-sesion-first-div {
+        background-color: var(--white-alpha-25);
+        border: 1px solid var(--white-alpha-40);
+        min-height: 80vh;
+        width: 100%;
+        border-radius: 15px;
+        padding: 45px;
+    }
+
+    .about {
+        min-height: 100vh;
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--blue-dark);
+        line-height: 1.5;
+        -webkit-top-highlight-color: transparent;
+        padding: 60px;
+    }
+
+    .about::before {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .about .heading-about {
+        text-align: center;
+        font-size: 45px;
+        letter-spacing: 1px;
+        padding: 0px 0px 30px;
+    }
+
+    .about-session-parent-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-box {
+        border: 1px var(--white-alpha-40);
+        border-radius: 5px;
+        margin: auto;
+        max-width: 500px;
+        width: 30%;
+    }
+
+    .img-box img {
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        border-radius: 5px;
+
+    }
+
+    .about-text {
+        width: 65%;
+        padding: 25px;
+        font-size: 20px;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills .skill-item {
+        background-color: var(--white-alpha-25);
+        border: 3px solid var(--white-alpha-40);
+        text-transform: capitalize;
+        padding: 5px 15px;
+        margin: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .about-tabs {
+        margin: 20px 0px;
+        padding: 2px;
+    }
+
+    .about-tabs .tab-item {
+        background-color: var(--second-main-color);
+        border: none;
+        text-transform: capitalize;
+        display: inline-block;
+        color: var(--blue-dark);
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 2px 0px;
+        margin: 0px 10px;
+        position: relative;
+        border-radius: 20px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .about-tabs .tab-item:hover {
+        background-color: transparent;
+        opacity: 0.9;
+    }
+
+    .about-tabs .tab-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        
+        width: 0%;
+        background-color: var(--main-color);
+        height: 1px;
+        transition: width 0.3s ease;
+    }
+
+    .about-tabs .tab-item:hover::before {
+        width: 100%;
+    }
+
+    /* ===========ABOUT SESSION ENDS-===================== */
+}
+

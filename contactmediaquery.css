@@ -1,0 +1,271 @@
+@media(max-width:576px){
+    .contact-session{
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px 20px;
+        background-color: #ce4e78;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .contact-session-div-h1{
+       font-size: 25px;
+    }
+    .contact-session-main-div{
+        width:100%;
+        height:auto;
+    padding: 10px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items:center ; */
+    }
+    .contact-session-main-div-sub-div-1{
+        background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    width: 100%;
+    height:auto;
+    border-radius: 20px;
+    }
+    .input-placeholder{
+        width:90%;
+        height:45px;
+        margin: 20px;
+        padding: 10px;
+        /* font-size: 20px;
+        font-weight: 600;
+        color: #c31818;
+        outline: none;
+        border: none; */
+        border-radius: 5px;
+    }
+}
+@media(min-width:576px){
+    .contact-session{
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px 100px;
+        background-color: #ce4e78;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .contact-session-div-h1{
+       font-size: 30px;
+    }
+    .contact-session-main-div{
+        width:100%;
+        height:auto;
+    padding: 50px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items:center ; */
+    }
+    .contact-session-main-div-sub-div-1{
+        background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    width: 100%;
+    height:auto;
+    border-radius: 20px;
+    }
+    .input-placeholder{
+        width:90%;
+        height:45px;
+        margin: 20px;
+        padding: 10px;
+        /* font-size: 20px;
+        font-weight: 600;
+        color: #c31818;
+        outline: none;
+        border: none; */
+        border-radius: 5px;
+    }
+
+}
+@media(min-width:768px){
+    .contact-session{
+        width: 100%;
+        min-height: 100vh;
+        padding: 30px 30px;
+        background-color: #ce4e78;
+    }
+    .logo img {
+        width: 130px;
+    }
+    .contact-session-div-h1{
+       font-size: 30px;
+    }
+    .contact-session-main-div{
+        width:100%;
+        height:auto;
+    padding: 20px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items:center ; */
+    }
+    .contact-session-main-div-sub-div-1{
+        background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    width: 100%;
+    height:auto;
+    border-radius: 20px;
+    }
+    .input-placeholder{
+        width:90%;
+        height:45px;
+        margin: 20px;
+        padding: 10px;
+        /* font-size: 20px;
+        font-weight: 600;
+        color: #c31818;
+        outline: none;
+        border: none; */
+        border-radius: 5px;
+    }
+.contact-session-main-div-sub-div-2-icon{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.input-button{
+    width:35%;
+    height:50px;
+    
+}
+}
+@media(min-width:992px){
+    .contact-session{
+        width: 100%;
+        min-height: 100vh;
+        padding: 30px 30px;
+        background-color: #ce4e78;
+    }
+    .logo img {
+        width: 130px;
+    }
+    .contact-session-div-h1{
+        font-size: 35px;
+    }
+    .contact-session-main-div{
+        width:100%;
+        height:auto;
+    padding: 20px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items:center ; */
+    }
+    .contact-session-main-div-sub-div-1{
+        background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    width: 100%;
+    height:auto;
+    border-radius: 20px;
+    }
+    .input-placeholder{
+        width:40%;
+        height:45px;
+        margin: 20px;
+        padding: 10px;
+        /* font-size: 20px;
+        font-weight: 600;
+        color: #c31818;
+        outline: none;
+        border: none; */
+        border-radius: 5px;
+    }
+.contact-session-main-div-sub-div-2-icon{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.input-button{
+    width:35%;
+    height:50px;
+    
+} 
+}
+@media(min-width:1160px){
+    .contact-session{
+        width: 100%;
+        min-height: 100vh;
+        padding: 70px 70px;
+        background-color: #ce4e78;
+    }
+    .logo img {
+        max-width: 100%;
+        /* ensures that the logo image will never exceed its parent container's width, regardless of the device or screen size.  */
+        width: 130px;
+        /* rule sets the default width of the logo image to be 130 pixels. This ensures that the logo image will always be at least 130 pixels wide,  */
+        height: auto;
+        /* The height: auto; rule is used to maintain the aspect ratio of the logo image. This means that the logo image's height will adjust automatically based on its width, ensuring that it doesn't appear stretched or squished.
+         */
+        /*  max-width and width properties, the logo image will be responsive and adapt to different screen sizes, while also maintaining a consistent size and aspect ratio.  */
+    }
+    .contact-session-div{
+        width:100%;
+        height: auto;
+        border-radius: 20px;
+    background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+        /* background-image: linear-gradient(to bottom right,var(--pink-light),var(--cyan-light) );  */
+        /* background-color:#efa2b4; */
+    padding: 20px;
+    }
+        /* background-image: linear-gradient(to bottom right,var(--pink-light),var(--cyan-light) );  */
+     .contact-session-div-h1{
+        text-align: center;
+        margin-top: 0px;
+        font-size: 35px;
+    }
+    .contact-session-main-div{
+        width:100%;
+        height:auto;
+    padding: 60px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items:center ; */
+    }
+    .contact-session-main-div-sub-div-1{
+        background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    width: 50%;
+    height:auto;
+    border-radius: 20px;
+    }
+    .input-placeholder{
+        width:40%;
+        height:45px;
+        margin: 20px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #c31818;
+        outline: none;
+        border: none;
+    }
+    .input-button{
+        width:25%;
+        height:50px;
+        border-radius: 20px;
+        border: none;
+        font-size: 25px;
+        margin-left:20px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .contact-session-main-div-sub-div-2{
+        margin-top: 100px;
+        
+    }
+    .contact-session-main-div-sub-div-2 div{
+        margin-bottom: 20px;
+    }
+    .contact-session-main-div-sub-div-2-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 25px;
+    }
+}

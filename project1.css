@@ -1,0 +1,81 @@
+.card{
+    width: 40%;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-right:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 270px;
+    margin-bottom: 50px;
+}
+.card-inner{
+    width:100%;
+    text-align: center;
+    position: relative;
+    height: 100%;
+transform-style: preserve-3d;
+transition: transform 2s ease-in-out;
+}
+.front-face{
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    /* when we flip the card ,the front page will remain hidden */
+}
+.front-face img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.back-face{
+    backface-visibility: hidden;
+    background-color:#aaa2ef;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    color: #133f61;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.back-face h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.back-face p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.social-media i{
+    color:#ffffff;
+    width:12%;
+    height:auto;
+    line-height: 40px;
+    font-size: 18px;
+    background-color:#f75023;
+    border-radius: 50%;
+    margin: 15px 6px;
+}
+.social-media a{
+    text-decoration: none;
+}
+.btn{
+    color:rgb(3, 35, 45);
+    font-size: 25px;
+    text-decoration: none;
+    background:rgb(40, 116, 163);
+padding: 10px 50px;
+border-radius: 25px;
+margin: 10px auto 0;
+}
+.card:hover .card-inner{
+    transform: rotateY(-180deg);
+}

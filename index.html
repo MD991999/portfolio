@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="mediaquery.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="parent-div">
+
+        <!-- header session -->
+        <header id="home">
+            <div class="left-session">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">
+                    <div class="bx bx-menu" id="menu-icon"></div>
+                </label>
+                <a href="#home" class="logo"><img src="new-session/portfolio-image.jpg" alt=""></a>
+
+            </div>
+
+            <!-- three lines placed one above the other -->
+            <div class="middle-session">
+                <ul id="navlist-display" class="navlist">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a class="active" href="#about">About</a></li>
+                    <li><a class="active" id="active-education">Education</a></li>
+                    <li><a class="active" href="project.html">My Works</a></li>
+                    <li><a class="active" href="services.html">Services</a></li>
+
+                    <li><a class="active" href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="last-session">
+                <a href="resume -60223.pdf" class="top-btn">Download CV</a>
+
+            </div>
+
+        </header>
+        <!-- ====HOME==== -->
+
+        <section class="home">
+            <div class="home-text" data-aos="fade-down">
+                <h3>Hello, I'm</h3>
+                <h1>Michelle Devassia</h1>
+                <h5>MEARN Stack Web Developer <span>From Kerala</span></h5>
+                <p>I'm MEARN Stack Web Developer based in Kerala
+                </p>
+                <div class="social">
+                    <a class="" href=""><i class='bx bxl-netlify'></i></a>
+                    <a href="https://www.linkedin.com/in/michelle-devassia-3794b8260/">
+                        <i class=" fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MD991999?tab=repositories"><i
+                            class='social-a-class bx bxl-github'></i></a>
+                </div>
+                <a href="http://127.0.0.1:5501/index.html#about" class="btn">About Me</a>
+            </div>
+
+            <div class="home-img" data-aos="fade-up">
+                <img class="michelle-icon" src="images/minnu1-copy.jpg">
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <!-- <input type="checkbox" id="checkbox">
+            <label for="checkbox">
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </label> -->
+            <!-- <a href="#home" class="logo"><img src="new-session/portfolio-image.jpg" alt=""></a> -->
+
+            <div class="about-sesion-first-div">
+                <a href="" class="logo1"><img src="new-session/portfolio-image.jpg" alt=""></a>
+
+                <h1 class="heading-about">About</h1>
+                <div class="education-heading-display">
+                    <h1 class="heading-about1">Education</h1>
+                </div>
+                <div class="about-session-parent-div">
+                    <div class="img-box">
+                        <img src="images/minnu1-copy.jpg" alt="">
+                    </div>
+
+                    <div class="card">
+                        <!-- about session -->
+                        <div class="card-inner">
+                            <div class="about-text" id="frontface">
+                                <p>Passionate and self-motivated postgraduate student in MSc Mathematics with a strong
+                                    foundation in mathematical concepts and techniques. Currently pursuing a full-stack
+                                    web
+                                    development course to gain hands-on experience in web development technologies.
+                                    Seeking an
+                                    opportunity to apply my technical skills and passion for problem- solving to a web
+                                    development role in a challenging and dynamic work environment.
+                                </p>
+                                <h3>Skills</h3>
+                                <div class="skills">
+                                    <div class="skill-item">HTML 5</div>
+                                    <div class="skill-item">CSS</div>
+                                    <div class="skill-item">Bootstrap</div>
+                                    <div class="skill-item">Javascript</div>
+                                    <div class="skill-item">Angular</div>
+                                    <div class="skill-item">Mongo db</div>
+                                    <div class="skill-item">Express js</div>
+                                    <div class="skill-item">React js</div>
+                                    <div class="skill-item">Node js</div>
+                                    <!-- <div class="skill-item">Angular</div> -->
+                                </div>
+
+                                <div class="about-tabs">
+                                    <!-- <button class="tab-item active" type="button" data-target="#education" -->
+
+                                    <!-- <input type="checkbox" id="education">
+                              <label for="education"> -->
+                                    <div class="tab-item " onclick="educationmediaquery()" type="button">Education</div>
+                                    </label>
+                                    <button class="tab-item" type="button" onclick="project()">Projects</button>
+                                    <button class="tab-item" type="button" onclick="services()">Services</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- education details -->
+
+
+
+                        <div class="card-inner1">
+                            <div class="about-text1" id="backface">
+                                <div class="empty"></div>
+                                <div class="sslc">
+                                    <h3>
+                                        <div class="circle-shape"></div>SSLC
+                                    </h3>
+                                    <p>St.Mary's English Medium School</p>
+                                    <p>2014-2015</p>
+                                    <p><strong>CGPA:</strong>10</p>
+
+                                </div>
+                                <div class="highersecondary">
+                                    <h3>
+                                        <div class="circle-shape"></div>Higher Secondary
+                                    </h3>
+                                    <p>St.Mary's Higher Secondary School</p>
+                                    <p>2015-2017</p>
+                                    <p><strong>Percentage:</strong>92.9%</p>
+
+                                </div>
+                                <div class="graduation">
+                                    <h3>
+                                        <div class="circle-shape"></div>BSc Mathematics
+                                    </h3>
+                                    <p>St.Joseph's College,Devagiri</p>
+                                    <p>2017-2020</p>
+                                    <p><strong>Percentage:</strong>89.8%</p>
+
+                                </div>
+                                <div class="postgraduation">
+                                    <h3>
+                                        <div class="circle-shape"></div>MSc Mathematics
+                                    </h3>
+                                    <p>St.Joseph's College,Devagiri</p>
+                                    <p>2020-2022</p>
+                                    <p><strong>Percentage:</strong>85.8%</p>
+
+                                </div>
+
+                                <div>
+                                    <button class="button-arrow" onclick="buttonarrowright()"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+
+                                    <button class="button-arrow" onclick="buttonarrowleft()"><i
+                                            class="fa-solid fa-arrow-left"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</html>
+<!-- <img class="angular-icon" src="images/angular-icon.png" alt="angular-icon"> -->
+<!-- <img class="javascript-icon" src="images/javascript-icon.png" alt="javascript-icon"> -->
+<!-- <img class="html-icon"src="images/bootstrap.png" alt="bootstap-icon"> -->
+<!-- <img class="html-icon"src="images/html.png" alt="html-icon"> -->
+
+<!-- <img class="html-icon"src="images/css.png" alt="css-icon"> -->

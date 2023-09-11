@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Infant:ital,wght@1,300;1,500&family=EB+Garamond:wght@400;500&family=Eczar:wght@400;500&family=Fredericka+the+Great&family=Labrada&family=Satisfy&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'EB Garamond', serif;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --secound-color: #a09dab;
+    --main-color: #f75023;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --second-main-color:#e02f6b;
+    --blue:#0000ff;
+    --blue-dark:#18293c;
+    --orange:#ffa500;
+    --green-yellow:#cddc39;
+    --pink-light:#efa2b4;
+    --cyan-light:#aef1ee;
+    --white:#ffffff;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+    --backdrop-filter-blur:blur(5px);
+}
+
+body{
+    background-image: linear-gradient(to bottom right,var(--pink-light),var(--cyan-light) ); 
+    background-attachment: fixed;
+    background-size: cover;
+     color: var(--text-color);
+    width:100%;
+    height:300vh;
+    padding: 70px 70px;
+    border-radius: 10px;
+
+}
+
+.services-parent-div{
+    background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    width:100%;
+height:280vh;
+padding: 50px 50px;
+border-radius: 10px;
+
+}
+.heading-services{
+    text-align: center;
+    color: #de0f96;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.services-second-div{
+width:100%;
+background-color: #efa2b4;
+height:240vh;
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+padding: 100px;
+position: relative;
+border-radius: 10px;
+}
+
+.first-div-service-name{
+   width:45%;
+    background-color: var(--white-alpha-25);
+    height: 250px;
+    position: absolute;
+    top:90px;
+    left:100px;
+    border-radius: 5px;
+}
+.second-div-service-name{
+    width:45%;
+     background-color: var(--white-alpha-25);
+     height: 250px;
+     position: absolute;
+    top:490px;
+    left:500px;
+    border-radius: 5px;
+
+ }
+ .third-div-service-name{
+    width:45%;
+     background-color: var(--white-alpha-25);
+     height: 250px;
+     position: absolute;
+     top:990px;
+     left:100px;
+     border-radius: 5px;
+
+ }
+ .forth-div-service-name{
+    width:45%;
+     background-color:var(--white-alpha-25);
+     height: 250px;
+     position: absolute;
+     top:1250px;
+     left:500px;
+     border-radius: 5px;
+
+ }
+.images-services-1{
+    width:100%;
+    height:100%;
+    mix-blend-mode: multiply;
+}
+.first-div-service-name p{
+font-size: 18px;
+text-align: justify ;
+}
+.second-div-service-name p{
+    font-size: 18px;
+text-align: justify ;
+
+}
+.third-div-service-name{
+    font-size: 18px;
+text-align: justify ;
+}
+.button-arrow{
+    font-size: 25px;
+    width:4%;
+    height: 45px;
+    border-radius: 55%;
+    border: none;
+    background-color:#c04360;
+    color:#430519;
+    float:right;
+    margin: 3px;
+    cursor: pointer;
+}
+.logo img {
+    max-width: 100%;
+    /* ensures that the logo image will never exceed its parent container's width, regardless of the device or screen size.  */
+    width: 130px;
+    /* rule sets the default width of the logo image to be 130 pixels. This ensures that the logo image will always be at least 130 pixels wide,  */
+    height: auto;
+    /* The height: auto; rule is used to maintain the aspect ratio of the logo image. This means that the logo image's height will adjust automatically based on its width, ensuring that it doesn't appear stretched or squished.
+     */
+    /*  max-width and width properties, the logo image will be responsive and adapt to different screen sizes, while also maintaining a consistent size and aspect ratio.  */
+}

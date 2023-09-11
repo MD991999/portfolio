@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contactmediaquery.css">
+</head>
+<body>
+
+<div class="contact-session">
+    <div class="contact-session-div">
+        <a href="index.html" class="logo"><img src="new-session/portfolio-image.jpg" alt=""></a>
+
+        <h1 class="contact-session-div-h1">Contact Me</h1>
+        <div class="contact-session-main-div">
+            <div class="contact-session-main-div-sub-div-1">
+                <form >
+                    <div>
+                        <input id="firstname"class="input-placeholder" name="firstname"type="text" placeholder="First name" required>
+                        <input id="secondname"class="input-placeholder" name="secondname" type="text" placeholder="Last name" required>
+
+                    </div>
+                    <div>
+                        <input id="email"class="input-placeholder" name="email"type="text" placeholder="Your Email" required>
+                        <input id="project"class="input-placeholder" name="project"type="text" placeholder="Project" required>
+
+                    </div>
+                    <div>
+                        <textarea id="message" name="meassage"class="input-placeholder" name="message" rows="10" cols="30"
+                            placeholder="Message" required></textarea>
+                    </div>
+                  <a href="mailto:devassiamichelle9@gmail.com?subject=Mail from website" target="_blank">  <button id="meassagebtn" name="meassagebtn" class="input-button"type="button">Message</button></a>
+                </form>
+            </div>
+            <div class="contact-session-main-div-sub-div-2">
+                <div class="contact-session-main-div-sub-div-2-icon"><i
+                        class="fa-solid fa-location-dot "></i>&nbsp;<strong>Address:</strong>&nbsp;&nbsp;Wayanad,India
+                </div>
+                <div class="contact-session-main-div-sub-div-2-icon"><i
+                        class="fa-solid fa-envelope "></i>&nbsp;<strong>Email:</strong>&nbsp;&nbsp;devassiamichelle9@gmail.com
+                </div>
+                <div class="contact-session-main-div-sub-div-2-icon"><i
+                        class="fa-solid fa-phone "></i>&nbsp;<strong>Mobile:</strong>&nbsp;&nbsp;+91 7306946106</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<!-- <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+
+// var firstname=document.getElementById('firstname')
+messagebtn.addEventListener('click',function(e){
+    e.preventDefault();
+    var firstname=document.getElementById('firstname').value
+var secondname=document.getElementById('secondname').value
+var email=document.getElementById('email').value
+var project=document.getElementById('project').value
+var firstname=document.getElementById('firstname').value
+var message=document.getElementById('message').value
+// var messagebtn=document.getElementById('meassagebtn').value
+var body=`name:${firstname} ${secondname}  <br> email:${email} <br>project:${project} <br> message:${meassage}`
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "michelledevassia1999@gmail.com",
+    Password : "vdstsabgpokdpint",
+    To : 'devassiamichelle9@gmail.com',
+    From : "email",
+    Subject : "message",
+    Body : "body"
+}).then(
+  message => alert(message)
+);})
+</script> -->
+</html>

@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Infant:ital,wght@1,300;1,500&family=EB+Garamond:wght@400;500&family=Eczar:wght@400;500&family=Fredericka+the+Great&family=Labrada&family=Satisfy&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'EB Garamond', serif;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --secound-color: #a09dab;
+    --main-color: #f75023;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --second-main-color: #e02f6b;
+    --blue: #0000ff;
+    --blue-dark: #18293c;
+    --orange: #ffa500;
+    --green-yellow: #cddc39;
+    --pink-light: #efa2b4;
+    --cyan-light: #aef1ee;
+    --white: #ffffff;
+    --white-alpha-40: rgba(255, 255, 255, 0.40);
+    --white-alpha-25: rgba(255, 255, 255, 0.25);
+    --backdrop-filter-blur: blur(5px);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+button {
+    font-family: 'Labrada', serif;
+    user-select: none;
+}
+
+/* =============HEADER SESSION============ */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: .3s;
+    /*  transition: .3s; is setting a transition effect for all CSS properties that change their value.This means that when a property changes its value, such as when a hover effect is applied to a link or a menu item, the transition effect will smoothly animate the change, making it more visually appealing and adding a more polished feel to the website. */
+}
+
+.logo img {
+    max-width: 100%;
+    /* ensures that the logo image will never exceed its parent container's width, regardless of the device or screen size.  */
+    width: 130px;
+    /* rule sets the default width of the logo image to be 130 pixels. This ensures that the logo image will always be at least 130 pixels wide,  */
+    height: auto;
+    /* The height: auto; rule is used to maintain the aspect ratio of the logo image. This means that the logo image's height will adjust automatically based on its width, ensuring that it doesn't appear stretched or squished.
+     */
+    /*  max-width and width properties, the logo image will be responsive and adapt to different screen sizes, while also maintaining a consistent size and aspect ratio.  */
+}
+
+.left-session {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+}
+
+/* why using the below property here */
+/* .navlist li{
+	position: relative;
+} */
+
+.navlist a {
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 15px;
+
+}
+
+/* a.active{
+    color:#e02f6b;
+    background-color: #f75023;
+} */
+/* Still need clarifiaction for thebelow step */
+.navlist a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    /* bottom: -3px; */
+    left: 0;
+    top: 135px;
+    /* bottom: 0px; */
+    transition: ease .40s;
+}
+
+#checkbox1 {
+    display: none;
+}
+
+.navlist a:hover::after {
+    width: 100%;
+}
+
+/* design for hamburger */
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/* design for download cv */
+.top-btn {
+    padding: 9px 30px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    transition: ease .50s;
+}
+
+.top-btn:hover {
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+
+.active {
+    cursor: pointer;
+}
+
+/* =========HEADER SESSION ENDS!!!!!!!!!============= */
+
+/* =========HOME SESSION BEGINS========== */
+section {
+    padding: 100px 18%;
+    /* Using different units for the top/bottom padding and left/right padding can be useful in situations where you want the padding to scale proportionally with the size of the element. In this case, the top/bottom padding is set to a fixed value of 100px, while the left/right padding is set to a percentage value of 18%, which means that it will adjust relative to the width of the element. */
+}
+
+.home {
+    min-height: 100vh;
+    /*  min-height: 100vh; means that the element will have a minimum height of 100% of the viewport height. */
+
+    height: 100%;
+    /* Setting height: 100%; means that the element will have a height of 100% of its parent element's height. */
+    /* Using both min-height: 100vh; and height: 100%; together can be useful in situations where you want the element to expand to fit its content, but also want to ensure that it always takes up at least the full height of the viewport. */
+    z-index: -1;
+    width: 100%;
+    background: url(new-session/background\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* . The first argument 2 specifies the number of times to repeat the pattern, and the second argument 1fr specifies the size of each column. */
+    /* It's also a great way to create responsive grid layouts, where the columns adjust automatically based on the available screen width. */
+    align-items: center;
+    grid-gap: 4rem;
+}
+
+.home-text h1 {
+    margin: 10px 0px 25px;
+    /* margin is used to define the space between an element's border and adjacent elements. */
+    font-size: var(--big-font);
+    line-height: 1;
+    font-weight: 500;
+}
+
+.home-text h5 {
+    margin-bottom: 23px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-text h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    color: #000;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.social a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(128, 103, 240, 1);
+    font-size: 17px;
+    color: var(--bg-color);
+    margin-right: 22px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+    background: var(--main-color);
+    transition: .5s;
+}
+
+.btn{
+    display: inline-block;
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: var(--p-font);
+    padding: 10px 40px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 30px;
+    transition: ease .40s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.home-img img {
+    max-width: 100%;
+    width: 540px;
+    height: auto;
+}
+
+/* why using the above property */
+/* header.sticky{
+	background: var(--bg-color);
+	padding: 13px 18%;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+} */
+.michelle-icon {
+    mix-blend-mode: multiply;
+}
+
+/* .items{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	text-align: center;
+} */
+
+
+/* =========ABOUT SESSION BEGINS============= */
+.about-sesion-first-div {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    /* padding: 80px; */
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding: 45px;
+}
+
+.about {
+    height: 250vh;
+    /* height: 100%; */
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--blue-dark);
+    line-height: 1.5;
+    /* overflow-x: hidden; */
+    -webkit-top-highlight-color: transparent;
+    /* padding: 5vh 15px; */
+    padding: 60px;
+}
+.logo1 img {
+    max-width: 100%;
+    /* ensures that the logo image will never exceed its parent container's width, regardless of the device or screen size.  */
+    width: 130px;
+    /* rule sets the default width of the logo image to be 130 pixels. This ensures that the logo image will always be at least 130 pixels wide,  */
+    height: auto;
+    /* The height: auto; rule is used to maintain the aspect ratio of the logo image. This means that the logo image's height will adjust automatically based on its width, ensuring that it doesn't appear stretched or squished.
+     */
+    /*  max-width and width properties, the logo image will be responsive and adapt to different screen sizes, while also maintaining a consistent size and aspect ratio.  */
+}
+
+
+.about::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    /* width:100%; */
+    /* background-color: var(--green-yellow); */
+    z-index: -1;
+    /* opacity:0.12 ; */
+}
+
+
+.heading-about1 {
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 1px;
+    padding: 0px 0px 30px;
+    display: none;
+}
+
+.about-session-parent-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-box {
+    border: 1px var(--white-alpha-40);
+    border-radius: 5px;
+    margin: 50px;
+    max-width: 500px;
+    height: 350px;
+    width: 35%;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    border-radius: 5px;
+
+}
+
+.card {
+    width: 65%;
+    padding: 25px;
+    font-size: 20px;
+    background-color: var(--white-alpha-25);
+    border: var(--white-alpha-40);
+    margin-left: 20px;
+}
+
+.card-inner {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.about-text h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .skill-item {
+    background-color: var(--white-alpha-25);
+    border: 3px solid var(--white-alpha-40);
+    text-transform: capitalize;
+    padding: 5px 15px;
+    margin: 10px 10px;
+    border-radius: 20px;
+}
+
+.about-tabs {
+    margin: 20px 0px;
+    padding: 2px;
+}
+
+.about-tabs .tab-item {
+    background-color: var(--second-main-color);
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: var(--blue-dark);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 2px 0px;
+    margin: 0px 10px;
+    position: relative;
+    border-radius: 20px;
+    width: 20%;
+}
+
+.about-tabs .tab-item:hover {
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.about-tabs .tab-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    ;
+    width: 0%;
+    background-color: var(--main-color);
+    height: 1px;
+    transition: width 0.3s ease;
+}
+
+.about-tabs .tab-item:hover::before {
+    width: 100%;
+}
+
+/* ====================about session and eduction sesion============ */
+#frontface {
+    width: 100%;
+    height: 100%;
+}
+
+.card-inner1 {
+    width: 100%;
+    position: relative;
+    height: 82vh;
+    display: none;
+}
+
+#backface {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.empty::before {
+    content: '';
+    width: 2px;
+    height: 586px;
+    position: absolute;
+    top: -24px;
+    left: 16px;
+    background-color: #c0c0c2;
+}
+
+.sslc,
+.highersecondary,
+.graduation,
+.postgraduation {
+    margin-bottom: 20px;
+}
+
+.sslc p,
+.highersecondary p,
+.graduation p,
+.postgraduation p {
+    margin-left: 50px;
+}
+
+.button-arrow {
+    font-size: 25px;
+    width: 4%;
+    height: 45px;
+    border-radius: 55%;
+    border: none;
+    background-color: #2b847e;
+    color: #18293c;
+    float: right;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* #education:checked #backface {
+    left: 50px;
+    z-index: 147px;
+} */
+
+/* #education:checked #frontface {
+    display: none;
+} */
+
+.circle-shape {
+    width: 5%;
+    height: 20px;
+    clip-path: circle(20%);
+    background-color: #9a9aaf;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+/* why using the below concept */
+/* .about-tabs .tab-item.active{
+    color: var(--second-main-color);
+    opacity: 1;
+    cursor: auto;
+}
+.about-tabs .tab-item.active::before{
+    width: 100%;
+    background-color: var(--second-main-color);
+} */
+
+
+
+
+
+/* .second-page-left {
+    width: 40%;
+    height: 500px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border: 1.8px solid rgb(112, 108, 108);
+    padding: 15px;
+}
+
+.third-page-left {
+    width: 25%;
+    height: 300px;
+
+}
+
+.second-page-left-div {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    background: linear-gradient(to right red, yellow);
+
+}
+
+.first-page-left-h1 {
+    font-size: 120px;
+    font-family: 'EB Garamond', serif;
+    color: rgb(55, 12, 55);
+    text-align: center;
+    -webkit-text-stroke: 0.5px rgb(143, 143, 142);
+
+}
+
+.star-icon {
+    width: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+ */
+
+/*SECOND SESSION  */
+/* .second-session {
+    height: 100vh;
+
+}
+
+.second-session-parent-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.second-session-firstdiv {
+    width: 35%;
+    height: 300px;
+
+}
+
+.second-session-seconddiv {
+    width: 35%;
+    height: 300px;
+}
+
+.second-session-thirddiv {
+    width: 30%;
+    height: 300px;
+}
+
+.second-session-firstdiv-h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Eczar', serif;
+    margin-bottom: 0;
+    color: rgb(20, 38, 64);
+    font-weight: 500;
+    margin-top: 70px;
+}
+
+.second-session-firstdiv-h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Labrada', serif;
+    color: rgb(25, 63, 63);
+    font-weight: 400;
+    margin-top: 0;
+    vertical-align: middle;
+    margin-bottom: 100px;
+
+}
+
+.profile-pic-michelle {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color: rgb(143, 143, 142);
+
+}
+
+.second-session-thirddiv {
+    margin-left: 30px;
+    margin-top: 70px;
+
+}
+
+.address {
+    margin-left: 35px;
+
+}
+
+.second-session-thirddiv span {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Cormorant Infant', serif;
+    color: rgb(17, 81, 121);
+    margin-left: 20px;
+}
+
+.icons {
+    font-size: 21px;
+    color: rgb(20, 38, 64);
+}
+
+.heading-objective {
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(20, 38, 64);
+}
+
+.second-session-second-parent p {
+    font-size: 20px;
+    color: rgb(39, 50, 60);
+    text-align: center;
+    font-family: 'Labrada', serif;
+}
+ */
+
+
+/* third session */
+/* .third-session {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.skills-session {
+    text-align: center;
+    font-size: 34px;
+    color: rgb(20, 38, 64);
+    margin-top: 120px;
+    margin-bottom: 70px;
+
+}
+
+.third-session-skills-session-parent-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.third-session-skills-session-child1-div {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    flex: 1;
+    border: 2px solid rgb(159, 162, 165);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: lightgrey;
+
+}
+
+.third-session-skills-session-child1-div p {
+    color: rgb(4, 56, 7);
+
+}
+
+.layout-design-icon {
+    width: 100%;
+    mix-blend-mode: multiply;
+    height: 200px;
+}
+
+.third-session-skills-session-child2-div {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    flex: 1;
+    border: 2px solid rgb(159, 162, 165);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: lightgrey;
+
+}
+
+.third-session-skills-session-child2-div p {
+    color: rgb(4, 56, 7);
+
+}
+
+.responsive-website-icon {
+    width: 80%;
+    mix-blend-mode: multiply;
+    height: 200px;
+
+}
+
+.third-session-skills-session-child3-div {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    flex: 1;
+    border: 2px solid rgb(159, 162, 165);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightgrey;
+
+}
+
+.third-session-skills-session-child3-div p {
+    color: rgb(4, 56, 7);
+}
+
+.dynamic-website-icon {
+    width: 80%;
+    mix-blend-mode: multiply;
+    height: 200px
+} */
+
+/* .third-session-skills-session-secondparent-div {}
+
+.third-session-skills-session-secondparent-div-softwareskills1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
+.html-icon {
+    width: 100%;
+    mix-blend-mode: multiply;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.javascript-icon {
+    width: 100%;
+    mix-blend-mode: multiply;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.angular-icon {
+    width: 80%;
+    mix-blend-mode: multiply;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.heading-skills1 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Acme', sans-serif;
+    margin-left: 50px;
+    color: rgb(38, 87, 102);
+}
+
+.stars {
+    margin-left: 20px;
+    color: rgb(13, 195, 251);
+
+}
+
+.button-languages {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10%;
+    border: none;
+    background-color: rgb(243, 222, 222);
+    color: rgb(173, 69, 28);
+} */
+
+/* language session */
+/* .third-session-language-session {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.third-session-language-session-first {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.third-session-language-session-first p i {
+    font-size: 20px;
+    color: rgb(22, 77, 22);
+}
+
+.third-session-language-session-first p {
+    font-size: 20px;
+    color: lightcoral;
+} */
+
+/* forth session */
+/* .forth-session {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+
+.forth-session-parent-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+}
+
+.forth-session-first-div {
+    width: 40%;
+    background-color: aquamarine;
+    min-height: 100vh;
+}
+
+.forth-session-second-div {
+    width: 60%;
+    min-height: 100vh;
+    padding: 20px;
+    border: 2px solid rgb(80, 66, 49);
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+}
+
+.forth-session-second-div-heading {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Eczar', serif;
+    margin-top: 50px;
+    color: #191919;
+} */
+
+/* forth session project session */
+/* .forth-session-project1-htmlandcss,
+.forth-session-project1-html-cssandbootstrap,
+.forth-session-project1-gameproject,
+.forth-session-project1-javascript {
+    margin: 60px;
+}
+
+.fifth-session {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.fifth-session-parent-div {
+    background-color: lightblue;
+    width: 100%;
+    height: 300vh;
+    position: relative;
+}
+
+
+ */
+/* sixth session */
+/* .sixth-session {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(104, 150, 180);
+}
+
+.sixth-session-h1 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Acme', sans-serif;
+}
+
+.sixth-session-h3 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+ */

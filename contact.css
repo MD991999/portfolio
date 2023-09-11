@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Infant:ital,wght@1,300;1,500&family=EB+Garamond:wght@400;500&family=Eczar:wght@400;500&family=Fredericka+the+Great&family=Labrada&family=Satisfy&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'EB Garamond', serif;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --secound-color: #a09dab;
+    --main-color: #f75023;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --second-main-color:#e02f6b;
+    --blue:#0000ff;
+    --blue-dark:#18293c;
+    --orange:#ffa500;
+    --green-yellow:#cddc39;
+    --pink-light:#efa2b4;
+    --cyan-light:#aef1ee;
+    --white:#ffffff;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+    --backdrop-filter-blur:blur(5px);
+}
+.contact-session{
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 70px;
+    background-color: #ce4e78;
+}
+.logo img {
+    max-width: 100%;
+    /* ensures that the logo image will never exceed its parent container's width, regardless of the device or screen size.  */
+    width: 130px;
+    /* rule sets the default width of the logo image to be 130 pixels. This ensures that the logo image will always be at least 130 pixels wide,  */
+    height: auto;
+    /* The height: auto; rule is used to maintain the aspect ratio of the logo image. This means that the logo image's height will adjust automatically based on its width, ensuring that it doesn't appear stretched or squished.
+     */
+    /*  max-width and width properties, the logo image will be responsive and adapt to different screen sizes, while also maintaining a consistent size and aspect ratio.  */
+}
+.contact-session-div{
+    width:100%;
+    height: auto;
+    border-radius: 20px;
+background-color: var(--white-alpha-25);
+border: var(--white-alpha-40);
+    /* background-image: linear-gradient(to bottom right,var(--pink-light),var(--cyan-light) );  */
+    /* background-color:#efa2b4; */
+padding: 20px;
+}
+    /* background-image: linear-gradient(to bottom right,var(--pink-light),var(--cyan-light) );  */
+ .contact-session-div-h1{
+    text-align: center;
+    margin-top: 0px;
+}
+.contact-session-main-div{
+    width:100%;
+    height:auto;
+padding: 60px;   
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+/* align-items:center ; */
+}
+.contact-session-main-div-sub-div-1{
+    background-color: var(--white-alpha-25);
+border: var(--white-alpha-40);
+width: 50%;
+height:auto;
+border-radius: 20px;
+}
+.input-placeholder{
+    width:40%;
+    height:45px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #c31818;
+    outline: none;
+    border: none;
+}
+.input-button{
+    width:25%;
+    height:50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+    margin-left:20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.contact-session-main-div-sub-div-2{
+    margin-top: 100px;
+    
+}
+.contact-session-main-div-sub-div-2 div{
+    margin-bottom: 20px;
+}
+.contact-session-main-div-sub-div-2-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="servicesmediaquery.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="services-parent-div">
+        <a href="index.html" class="logo"><img src="new-session/portfolio-image.jpg" alt=""></a>
+
+        <h1 class="heading-services">SERVICES</h1>
+        <div class="services-second-div">
+            <div class="first-div-service-name " data-aos="zoom-in">
+                <img class="images-services-1" src="images/web-design-2.jpeg" alt="">
+                <p>"I am proficient in <strong>WEB DESIGNING</strong> and have experience creating custom designs using
+                    <strong>HTML</strong>, <strong>CSS</strong>, and
+                    <strong>Bootstrap</strong> . My designs are visually appealing, user-friendly, and optimized for
+                    both desktop and
+                    mobile devices."
+                </p>
+            </div>
+            <div class="second-div-service-name" data-aos="zoom-in-up">
+                <img class="images-services-1" src="images/dynamic-website.jpg" alt="">
+                <p>"I specialize in creating <strong>DYNAMIC WEBSITES</strong> using a variety of front-end technologies such
+                    as <strong>Angular</strong>,<strong>React</strong>, and <strong>JavaScript</strong>.My experience
+                    in dynamic website development includes building
+                    e-commerce sites, CRUD websites, and web applications in a variety of
+                    fields."</p>
+            </div>
+
+            <div class="third-div-service-name" data-aos="zoom-in-down">
+                <img class="images-services-1" src="images/responsive-website.png" alt="">
+                <p>"As a skilled web designer, I specialize in creating <strong>RESPONSIVE WEBSITES</strong> that look great on all
+                    devices. Using flexible layouts and media queries, I'm able to ensure that your site looks and
+                    functions perfectly on desktops, tablets, and smartphones."</p>
+            </div>
+            <!-- <div class="forth-div-service-name" data-aos="zoom-in-left">
+                <img class="images-services-1" src="images/CRUD.jpeg" alt="">
+            </div> -->
+
+        </div>
+        <div class="button-div-arrow">
+            <button class="button-arrow" onclick="buttonarrowright()"><i class="fa-solid fa-arrow-right"></i></button>
+        
+            <button class="button-arrow" onclick="buttonarrowleft()"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>  
+ function buttonarrowright(){
+    window.location="contactme.html"
+        }
+        function buttonarrowleft(){
+        window.location="http://127.0.0.1:5501/index.html#about"
+        }</script>
+</html>

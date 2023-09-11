@@ -1,0 +1,508 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --secound-color: #a09dab;
+    --main-color: #f75023;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --second-main-color:#e02f6b;
+    --blue:#0000ff;
+    --blue-dark:#18293c;
+    --orange:#ffa500;
+    --green-yellow:#cddc39;
+    --pink-light:#efa2b4;
+    --cyan-light:#aef1ee;
+    --white:#ffffff;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+    --backdrop-filter-blur:blur(5px);
+}
+
+@media(max-width:576px){
+    .logo img {
+        width: 80px;
+    }
+    .project-session-main-div{
+        padding: 20px 20px;
+    }
+    .project-session-sub-div{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
+    .card{
+    width:100%;
+        perspective: 1000px;
+        margin-right:0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 250px;
+        margin-bottom: 20px;
+        /* background-color: blue; */
+    }
+    /* .card-inner{
+        width:100%;
+        text-align: center;
+        position: relative;
+        height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+    } */
+    .back-face h1{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 5px;
+        color:rgb(10, 66, 23);
+    }
+    .project-session-main-div-heading{
+        font-size: 25px;
+    }
+    .back-face p{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .social-media i{
+        color:#ffffff;
+        width:10%;
+        height:auto;
+        line-height: 40px;
+        font-size: 14px;
+        background-color:#f75023;
+        border-radius: 50%;
+        margin: 10px 6px;
+    }
+    .social-media a{
+        text-decoration: none;
+    }
+    .btn{
+        color:rgb(3, 35, 45);
+        font-size: 20px;
+        text-decoration: none;
+        background:rgb(40, 116, 163);
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin: 5px auto 0;
+    }
+    .button-arrow{
+        font-size: 15px;
+        width:6%;
+        height: 26px;
+        border-radius: 55%;
+        border: none;
+        background-color:#c04360;
+        color:#430519;
+        float:right;
+        margin-top: -10px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+   
+}
+/* =====min 576 px======== */
+@media(min-width:576px){
+    .logo img {
+        width: 130px;
+    }
+    .project-session-main-div{
+        padding: 50px 50px;
+    }
+    .project-session-sub-div{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
+    .card{
+    width:100%;
+        perspective: 1000px;
+        margin-right:0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 300px;
+        margin-bottom: 20px;
+        /* background-color: blue; */
+    }
+    /* .card-inner{
+        width:100%;
+        text-align: center;
+        position: relative;
+        height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+    } */
+    .back-face h1{
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 5px;
+        color:rgb(10, 66, 23);
+    }
+    .project-session-main-div-heading{
+        font-size: 28px;
+    }
+    .back-face p{
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .social-media i{
+        color:#ffffff;
+        width:10%;
+        height:auto;
+        line-height: 40px;
+        font-size: 18px;
+        background-color:#f75023;
+        border-radius: 50%;
+        margin: 10px 6px;
+    }
+    .social-media a{
+        text-decoration: none;
+    }
+    .btn{
+        color:rgb(3, 35, 45);
+        font-size: 20px;
+        text-decoration: none;
+        background:rgb(40, 116, 163);
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin: 5px auto 0;
+    } 
+    .button-arrow{
+        font-size: 24px;
+        width:7%;
+        height: 36px;
+        border-radius: 55%;
+        border: none;
+        background-color:#c04360;
+        color:#430519;
+        float:right;
+        margin-top: -10px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+}
+@media(min-width:768px){
+    .logo img {
+        width: 130px;
+    }
+    .project-session-main-div{
+        padding: 20px 20px;
+    }
+    .project-session-sub-div{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    }
+    .card{
+    width:100%;
+        perspective: 1000px;
+        margin-right:5px;
+        margin-left: 5px;
+        margin-top: 0px;
+        height: 300px;
+        margin-bottom: 20px;
+        /* background-color: blue; */
+    }
+    .front-face img{
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: fill;
+    }
+    /* .card-inner{
+        width:100%;
+        text-align: center;
+        position: relative;
+        height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+    } */
+    .back-face h1{
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 5px;
+        color:rgb(10, 66, 23);
+    }
+    .project-session-main-div-heading{
+        font-size: 35px;
+    }
+    .back-face p{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .social-media i{
+        color:#ffffff;
+        width:15%;
+        height:auto;
+        line-height: 40px;
+        font-size: 18px;
+        background-color:#f75023;
+        border-radius: 50%;
+        margin: 10px 6px;
+    }
+    .social-media a{
+        text-decoration: none;
+    }
+    .btn{
+        color:rgb(3, 35, 45);
+        font-size: 20px;
+        text-decoration: none;
+        background:rgb(40, 116, 163);
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin: 5px auto 0;
+    font-weight: 500;
+    } 
+    .button-arrow{
+        font-size: 24px;
+        width:4%;
+        height: 30px;
+        border-radius: 55%;
+        border: none;
+        background-color:#c04360;
+        color:#430519;
+        float:right;
+        margin-top: -25px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+}
+@media(min-width:992px){
+    .logo img {
+        width: 130px;
+    }
+    .project-session-main-div{
+        padding: 20px 20px;
+    }
+    .project-session-sub-div{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    }
+    .card{
+    width:100%;
+        perspective: 1000px;
+        margin-right:5px;
+        margin-left: 5px;
+        margin-top: 0px;
+        height: 400px;
+        margin-bottom: 20px;
+        /* background-color: blue; */
+    }
+    .front-face img{
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: fill;
+    }
+    /* .card-inner{
+        width:100%;
+        text-align: center;
+        position: relative;
+        height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+    } */
+    .back-face h1{
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 5px;
+        color:rgb(10, 66, 23);
+    }
+    .project-session-main-div-heading{
+        font-size: 35px;
+    }
+    .back-face p{
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .social-media i{
+        color:#ffffff;
+        width:16%;
+        height:auto;
+        line-height: 40px;
+        font-size: 20px;
+        background-color:#f75023;
+        border-radius: 50%;
+        margin: 10px 6px;
+    }
+    .social-media a{
+        text-decoration: none;
+    }
+    .btn{
+        color:rgb(3, 35, 45);
+        font-size: 20px;
+        text-decoration: none;
+        background:rgb(40, 116, 163);
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin: 5px auto 0;
+    font-weight: 500;
+    } 
+    .button-arrow{
+        font-size: 24px;
+        width:4%;
+        height: 34px;
+        border-radius: 55%;
+        border: none;
+        background-color:#c04360;
+        color:#430519;
+        float:right;
+        /* margin-top: -15px; */
+        margin-top: 0px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+}
+@media(min-width:1200px){
+    .project-session-main-div{
+        padding: 100px 100px;
+    }
+    .project-session-sub-div{
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        }
+        .card{
+            width:100%;
+                perspective: 1000px;
+                margin-right:10px;
+                margin-left: 10px;
+                margin-top: 0px;
+                height: 350px;
+                margin-bottom: 20px;
+                /* background-color: blue; */
+            }
+}
+@media(min-width:1350px){
+    .logo img {
+        max-width: 100%;
+        /* ensures that the logo image will never exceed its parent container's width, regardless of the device or screen size.  */
+        width: 130px;
+        /* rule sets the default width of the logo image to be 130 pixels. This ensures that the logo image will always be at least 130 pixels wide,  */
+        height: auto;
+        /* The height: auto; rule is used to maintain the aspect ratio of the logo image. This means that the logo image's height will adjust automatically based on its width, ensuring that it doesn't appear stretched or squished.
+         */
+        /*  max-width and width properties, the logo image will be responsive and adapt to different screen sizes, while also maintaining a consistent size and aspect ratio.  */
+    }
+    .project-session-main-div{
+        background-image:linear-gradient(to bottom right,lightskyblue,lightpink);
+    background-size: cover;
+        width:100%;
+        min-height: 100vh;
+        padding: 100px 100px;
+    }
+    .project-session-sub-div{
+        background-color: var(--white-alpha-25);
+        border: 1px solid var(--white-alpha-40);
+        width:100%;
+        /* height:100vh; */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items:center; */
+    padding: 20px;
+    margin-bottom: 30px;
+    }
+    .card{
+        width: 40%;
+        perspective: 1000px;
+        cursor: pointer;
+        margin-right:20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        height: 370px;
+        margin-bottom: 50px;
+    }
+    .card-inner{
+        width:100%;
+        text-align: center;
+        position: relative;
+        height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+    }
+    .front-face{
+        backface-visibility: hidden;
+        width: 100%;
+        height: 100%;
+        /* when we flip the card ,the front page will remain hidden */
+    }
+    .front-face img{
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .back-face{
+        backface-visibility: hidden;
+        background-color:#aaa2ef;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        color: #133f61;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    
+    .back-face h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .back-face p{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+    .social-media i{
+        color:#ffffff;
+        width:12%;
+        height:auto;
+        line-height: 40px;
+        font-size: 18px;
+        background-color:#f75023;
+        border-radius: 50%;
+        margin: 15px 6px;
+    }
+    .social-media a{
+        text-decoration: none;
+    }
+    .btn{
+        color:rgb(3, 35, 45);
+        font-size: 25px;
+        text-decoration: none;
+        background:rgb(40, 116, 163);
+    padding: 10px 50px;
+    border-radius: 25px;
+    margin: 10px auto 0;
+    }
+    .card:hover .card-inner{
+        transform: rotateY(-180deg);
+    }
+    .project-session-main-div-heading{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        margin-top: 0;
+    }
+}
